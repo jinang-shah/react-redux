@@ -30,6 +30,8 @@ import { AuthProvider } from './components/routing/Auth';
 import Login from './components/routing/Login';
 import RequireAuth from './components/routing/RequireAuth';
 import YoutubeForm from './components/formik/YoutubeForm';
+import FacebookForm from './components/formik/FacebookForm';
+import FormikContainer from './components/formik/FormikContainer';
 
 toast.configure()
 Modal.setAppElement('#root')
@@ -190,6 +192,8 @@ function App() {
             </RequireAuth> }>
           </Route>
           <Route path='/youtube' element={<YoutubeForm />}></Route>
+          <Route path='/facebook' element={<FacebookForm />}></Route>
+          <Route path='/reusable-form' element={<FormikContainer />}></Route>
           <Route path='*' element={<NotFound />}></Route>
         </Routes>
       </AuthProvider>

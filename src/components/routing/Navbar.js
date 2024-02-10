@@ -24,7 +24,9 @@ function Navbar() {
         <NavLink style={navLinkStyle} to='/about'>About</NavLink>
         <NavLink style={navLinkStyle} to='/products'>Product</NavLink>
         <NavLink style={navLinkStyle} to='/profile'>Profile</NavLink>
-        <NavLink style={navLinkStyle} to='/youtube'>Register on youtube</NavLink>
+        <NavLink style={navLinkStyle} to='/youtube'>Register on Youtube</NavLink>
+        <NavLink style={navLinkStyle} to='/facebook'>Register on Facebook</NavLink>
+        <NavLink style={navLinkStyle} to='/reusable-form'>Reusable Form</NavLink>
         {
           !auth.user && (
             <NavLink style={navLinkStyle} to='/login'>Login</NavLink>
